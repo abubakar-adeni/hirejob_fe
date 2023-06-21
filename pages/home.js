@@ -25,7 +25,7 @@ export default function Home() {
             />
             <div className="dropdown">
               <button
-                className="btn btn-secondary dropdown-toggle h-100"
+                className="btn btn-primary dropdown-toggle h-100"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
