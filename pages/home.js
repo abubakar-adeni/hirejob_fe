@@ -1,7 +1,6 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Link from "next/link";
-import home from "./home.module.css";
 
 export default function Home() {
   return (
