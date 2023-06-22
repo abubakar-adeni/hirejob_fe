@@ -55,28 +55,7 @@ function Profile() {
                   href="#"
                   style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
                 >
-                  JavaScript
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  ReactJS
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  ExpressJS
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  PHP
+                  Phyton
                 </Link>
                 <Link
                   className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
@@ -90,14 +69,35 @@ function Profile() {
                   href="#"
                   style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
                 >
-                  HTML
+                  Golang
                 </Link>
                 <Link
                   className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
                   href="#"
                   style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
                 >
-                  CSS
+                  JavaScript
+                </Link>
+                <Link
+                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
+                  href="#"
+                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
+                >
+                  Laravel
+                </Link>
+                <Link
+                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
+                  href="#"
+                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
+                >
+                  PHP
+                </Link>
+                <Link
+                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
+                  href="#"
+                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
+                >
+                  Kotlin
                 </Link>
               </div>
             </div>
