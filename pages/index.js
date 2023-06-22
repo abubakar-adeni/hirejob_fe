@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "@/store/reducers/counterSlice";
 import Link from "next/link";
+import Image from "next/image";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
