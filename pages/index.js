@@ -75,64 +75,38 @@ export default function Index() {
               <h2 className="mb-4 fw-bold text-primary">Skill Tallent</h2>
               <p>Inovasi teknologi terbaru yang dimiliki oleh bakat kami</p>
               <div className="row flex-column flex-md-row">
-                <div className="col d-none d-md-block">
-                  <ul
-                    style={{
-                      listStyle: "none",
-                      marginLeft: "0",
-                      paddingLeft: "1em",
-                      textIndent: "-1em",
-                    }}
-                  >
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      Java
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      Kotlin
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      PHP
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      JavaScript
-                    </li>
-                  </ul>
+               <div className="row">
+                <div className="col-md-6 col-lg-6 col-xs-5 col-sm-5">
+                  {["Java", "Kotlin", "PHP", "Javascript"].map((item, key) => (
+                    <div className="d-flex align-items-center mt-0" key={key}>
+                      <Image
+                        className="ms-5 mt-4 mb-0 "
+                        src="/tick2.png"
+                        alt="tick-icon"
+                        width={25}
+                        height={25}
+                      />
+                      <p className="ms-5 mt-4 mb-0 ">{item}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="col d-none d-md-block">
-                  <ul
-                    style={{
-                      listStyle: "none",
-                      marginLeft: "0",
-                      paddingLeft: "1em",
-                      textIndent: "-1em",
-                    }}
-                  >
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      Golang
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      C++
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      Ruby
-                    </li>
-                    <li className="mb-3">
-                      <img src="tick2.png" className="me-4" alt="tick2" />
-                      10+ Bahasa Lainnya
-                    </li>
-                  </ul>
+                <div className="col-md-6 col-lg-6 col-xs-5 col-sm-5">
+                  {["C++", "Ruby", "Python", "10+ Bahasa lainnya"].map(
+                    (item, key) => (
+                      <div className="d-flex align-items-center mt-0" key={key}>
+                        <Image
+                          className="ms-5 mt-4 mb-0"
+                          src="/tick2.png"
+                          alt="tick-icon"
+                          width={25}
+                          height={25}
+                        />
+                        <p className="ms-5 mt-4 me-3 mb-0 ">{item}</p>
+                      </div>
+                    )
+                  )}
                 </div>
-                <div className="col d-block d-md-none">
-                  Java, Kotlin, PHP, JavaScript, Golang, C++, Ruby, 10+ Bahasa
-                  Lainnya
-                </div>
+              </div>
               </div>
             </div>
             <div className="col col-md-6">
