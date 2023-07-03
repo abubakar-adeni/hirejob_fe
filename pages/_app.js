@@ -1,23 +1,23 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import { useEffect } from "react"
-import Head from "next/head"
-
-import { store } from "@/store"
-import { Provider } from "react-redux"
-import Script from "next/script"
-
-import "styles/scss/global.scss"
-import "styles/scss/auth.scss"
+import "bootstrap/dist/css/bootstrap.css";
+import "../styles/custom.scss";
+import "../styles/index.scss";
+import "../styles/candidate.scss";
+import "../styles/navbar.scss";
+import "../styles/find_job.scss";
+import { Provider } from "react-redux";
+import { store, persistor } from "@/store";
+import Script from "next/script";
+import { PersistGate } from "redux-persist/integration/react";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js")
-  }, [])
   return (
     <>
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-NH7553EBWK"
+        src="https://www.googletagmanager.com/gtag/js?id=G-3G5SHJ8E7S"
       />
       <Script
         id="google-analytics"
@@ -27,18 +27,17 @@ export default function App({ Component, pageProps }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-NH7553EBWK', {
+          gtag('config', 'G-3G5SHJ8E7S', {
             page_path: window.location.pathname,
           });
         `,
         }}
       />
-      <Head>
-        <title>Hire Job App</title>
-      </Head>
       <Provider store={store}>
-        <Component {...pageProps} />
+        <PersistGate Loading={null} persistor={persistor}>
+          <Component {...pageProps} />
+        </PersistGate>
       </Provider>
     </>
-  )
+  );
 }

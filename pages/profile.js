@@ -1,147 +1,203 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import React from "react"
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faInstagram,
+  faGitlab,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faBuilding,
+  faSuitcaseRolling,
+  faNoteSticky,
+  faEnvelope,
+  faStickyNote
+} from "@fortawesome/free-solid-svg-icons";
 
 function Profile() {
-  const router = useRouter()
+  const [activeTab, setActiveTab] = useState("portofolio");
+  const router = useRouter();
+  const auth = useSelector((state) => state?.auth);
+  const user = useSelector((state) => state?.user);
+  const getProperty = (prop) => {
+    return user?.data?.dataValues?.[prop] || user?.data?.[prop];
+  };
 
-  React.useEffect(() => {
-    if (localStorage.getItem("auth") == "False") {
-      router.push("/login")
+  const fullname = getProperty("fullname");
+  const photo = getProperty("photo");
+  const company = getProperty("company");
+  const domicile = getProperty("domicile");
+  const job_title = getProperty("job_title");
+  const description = getProperty("description");
+  const email = getProperty("email");
+  const skills = getProperty("skills");
+  const job_history = getProperty("job_history");
+
+  useEffect(() => {
+    if (auth.token === null) {
+      router.replace("/login");
     }
-  }, [])
+  }, [auth.status]);
 
+  function capitalizeWords(str) {
+    return str.replace(/\b\w/g, function (char) {
+      return char.toUpperCase();
+    });
+  }
+  // let company = [...new Array(2)];
   return (
-    <>
-      <main className="mb-5 pb-5">
-        <Navbar />
-        <div
-          className="bg-primary position-absolute mb-4"
-          style={{ height: "40vh", width: "100%", zIndex: "-99" }}
-        ></div>
-        <div className="container py-4" style={{ zIndex: "1" }}>
-          <div className="row px-3 px-md-5 gap-5">
-            <div className="col col-md-4 bg-white d-flex justify-content-center flex-column p-4 rounded-2">
-              <img
-                className="img-fluid w-50 align-self-center my-4"
-                src="pp-louis-tomlinson.png"
-                alt="pp-louis-tomlinson"
-              />
-              <Link className="text-muted mb-2 d-flex justify-content-center align-items-center text-decoration-none" href="/editprofile">
-                <img src="pencil.png" alt="edit" className="img-fluid me-2"/> 
-                <p className="m-1">Edit</p>
-              </Link>
-              <br/>
-              <h4 className="fw-bold">Abubakar Adeni</h4>
-              <p>Full-Stack Web Developer & Mobile</p>
-              <p className="text-muted mb-2">
-                <img src="map.png" alt="map" /> Jakarta
-              </p>
-              <p className="text-muted mb-2">Software Engineer</p>
-              <p className="text-muted mb-2">
-              Seorang software engineer di Binar Academy adalah seorang profesional yang terampil dan 
-              terlatih dalam mengembangkan perangkat lunak. Mereka bekerja di 
-              lingkungan yang inovatif dan kolaboratif, di mana mereka terus belajar dan tumbuh dalam bidang teknologi.
-              </p>
-              <Link href="/hire" className="btn btn-primary btn-lg my-4">
-                Hire
-              </Link>
-              <div className="my-4">
-                <h4 className="fw-bold">Skill</h4>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  Phyton
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  Laravel
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  Golang
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  JavaScript
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  Laravel
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  PHP
-                </Link>
-                <Link
-                  className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
-                  href="#"
-                  style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}
-                >
-                  Kotlin
-                </Link>
-              </div>
-            </div>
-            <div className="col" id="profile">
-              <div className="row mb-3">
-                <div className="col bg-white rounded-2 py-5 px-md-5">
-                  <ul className="nav nav-underline mb-3">
-                    <li className="nav-item">
-                      <Link className="nav-link active fs-5" href="#">
-                        Pengalaman Kerja
-                      </Link>
-                    </li>
-                  </ul>
-                  <div className="row">
-                    <div className="col">
-                      <img
-                        src="binar.png"
-                        alt="binaracademy"
-                        className="img-fluid"
-                      />
-                    </div> 
-                    <div className="col-10">
-                      <h4 className="mb-0 fw-semibold">Software Engineer</h4>
-                      <p className="fw-light m-0">Binar Academy</p>
-                      <p className="text-muted">
-                        January 2019 - January 2023 <span className="ps-3">
-                          3 Years
-                        </span>
-                      </p>
-                      <p>
-                        Memiliki pengalaman yang mumpuni dalam pengembangan perangkat lunak.
-                      </p>
-                    </div>
+    <div>
+      <Navbar />
+      <div
+        className="bg-primary position-absolute "
+        style={{
+          width: `100%`,
+          height: `40vh`,
+        }}
+      ></div>
+      <div className="container mt-5 mb-5">
+        <div className="row">
+          <div className="col-md-3 col-lg-3 col-xs-12 col-sm-12">
+            {user && user?.data && (
+              <div className="card">
+                <img
+                  src={photo}
+                  className="rounded-circle mx-auto d-block mt-3 object-fit-cover"
+                  width={`100`}
+                  height={`100`}
+                  alt="card"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{capitalizeWords(fullname)}</h5>
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faBuilding} />
+                    <p className="card-text ms-2 mb-0">
+                      {capitalizeWords(company)}
+                    </p>
                   </div>
-                  <hr />
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faLocationDot} />
+                    <p className="text-muted ms-2 mb-0">
+                      {capitalizeWords(domicile)}
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faSuitcaseRolling} />
+                    <p className="text-muted ms-2 mb-0">
+                      {capitalizeWords(job_title)}
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-start">
+                    <FontAwesomeIcon icon={faStickyNote} className="mt-1" />{" "}
+                    <p className="text-muted ms-2 mb-0 mt-0">{description}</p>
+                  </div>
+                </div>
+                <div className="d-grid gap-2 col">
+                  <div className="w-100">
+                    <Link href="/edit_profile">
+                      <button
+                        className="btn btn-primary mx-3"
+                        style={{ width: "calc(100% - 2rem)" }}
+                      >
+                        Edit profile
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+
+                <h5 className="card-title ms-3 mt-5">Skills</h5>
+                <div className="card-skills ms-2 ">
+                  <div className="d-inline ">
+                    {skills?.map((item, key) => (
+                      <span key={key} className="btn btn-outline-warning text-white me-2 fw-semibold mb-2"
+                      href="#"
+                      style={{ backgroundColor: "rgba(251, 176, 23, 0.6)" }}>
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="d-flex align-items-center mb-0 ms-3 mt-5">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <p className="text-muted ms-2 mb-0">{email}</p>
+                </div>
+                <div className="d-flex align-items-center mb-0 ms-3 mt-2">
+                  <FontAwesomeIcon icon={faInstagram} />
+                  <p className="text-muted ms-2 mb-0">@Louist91</p>
+                </div>
+                <div className="d-flex align-items-center mb-5 ms-3 mt-2">
+                  <FontAwesomeIcon icon={faGithub} />
+                  <p className="text-muted ms-2 mb-0">@Louistommo</p>
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="col-md-9 col-lg-9 col-xs-12 col-sm-12 ">
+            <div className="card">
+              <ul className="nav nav-tabs">
+                <li className="nav-item">
+                  <a
+                    className={`nav-link ${
+                      activeTab === "pengalaman-kerja" ? "active" : ""
+                    }`}
+                    style={
+                      activeTab === "pengalaman-kerja"
+                        ? { borderBottom: "5px solid #5e50a1" }
+                        : {}
+                    }
+                    onClick={() => setActiveTab("pengalaman-kerja")}
+                  >
+                    Pengalaman Kerja
+                  </a>
+                </li>
+              </ul>
+
+              <div className="tab-content">
+
+                <div
+                  id="pengalaman-kerja"
+                  className={`tab-pane fade ${
+                    activeTab === "pengalaman-kerja" ? "show active" : ""
+                  }`}
+                >
+                  {job_history?.length ? (
+                    job_history.map((job, index) => (
+                      <div key={index} className="row mt-4 ms-4 me-4">
+                        <div className="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+                          <img src={job.logo} style={{ width: `10vh` }} />
+                        </div>
+                        <div className="col col-md-10 col-lg-10 col-xs-8 col-sm-8">
+                          <h5 className="mb-0">{job.position}</h5>
+                          <p className="mb-0">{job.company}</p>
+                          <div className="d-flex align-items-center">
+                            <p className="text-secondary">{job.date}</p>
+                            <p className="text-secondary ms-5">6 months</p>
+                          </div>
+                          <p>{job.description}</p>
+                        </div>
+                        <hr className="border border-primary border-3 opacity-75" />
+                      </div>
+                    ))
+                  ) : (
+                    <h3 className="text-center text-secondary m-5 ">
+                      Pengalaman Kerja Kosong
+                    </h3>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;

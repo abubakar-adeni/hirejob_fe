@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
-const path = require("path")
+
 const nextConfig = {
-  reactStrictMode: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-}
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
 
 // Injected content via Sentry wizard below
 
@@ -23,7 +22,7 @@ module.exports = withSentryConfig(
     // Suppresses source map uploading logs during build
     silent: true,
 
-    org: "pijar-bw",
+    org: "nls-0p",
     project: "javascript-nextjs",
   },
   {

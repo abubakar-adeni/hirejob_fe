@@ -26,10 +26,10 @@ function Hire() {
                 src="pp-louis-tomlinson.png"
                 alt="pp-louis-tomlinson"
               />
-              <h4 className="fw-bold">Abubakar Adeni</h4>
+              <h4 className="fw-bold">Louis Tomlinson</h4>
               <p>Software Engineer</p>
               <p className="text-muted mb-2">
-                <img src="map.png" alt="map" /> Jakarta
+                <img src="map-pin.png" alt="map" /> Jakarta
               </p>
               <p className="text-muted mb-2">
                 Software Engineer yang mumpuni dalam pengembangan aplikasi.
