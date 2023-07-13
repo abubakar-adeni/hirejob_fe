@@ -95,19 +95,17 @@ npm run build
 
 <table>
  <tr>
-    <td><img width="350px" src="./documentation/" border="0" alt="Login" /></td>
-    <td> <img width="350px" src="./documentation/" border="0"  alt="Register" /></td>
+    <td><img width="350px" src="./documentation/login.png" border="0" alt="Login" /></td>
+    <td> <img width="350px" src="./documentation/register.ong" border="0"  alt="Register" /></td>
   </tr>
   <tr>
     <td>Login</td>
     <td>Register</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./documentation/landing-page.png" border="0" alt="Landing" /></td>
-    <td><img width="350px" src="../documentation/" border="0" alt="Profile" /> </td>
+    <td><img width="350px" src="../documentation/profile.png" border="0" alt="Profile" /> </td>
   </tr>
    <tr>
-    <td>Landing Page</td>
     <td>Edit Profile</td>
   </tr>
   <tr>
@@ -119,11 +117,9 @@ npm run build
     <td>Detail Talent</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./documentation/" border="0" alt="Experience" /></td>
     <td><img width="350px" src="./documentation/" border="0" alt="Hire" /> </td>
   </tr>
    <tr>
-    <td>Experience</td>
     <td>Hire</td>
   </tr>
 </table>
