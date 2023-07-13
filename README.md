@@ -104,24 +104,19 @@ npm run build
   </tr>
   <tr>
     <td><img width="350px" src="../documentation/profile.png" border="0" alt="Profile" /> </td>
+    <td><img width="350px" src="./documentation/hire.png" border="0" alt="Hire" /> </td>
   </tr>
    <tr>
     <td>Edit Profile</td>
+    <td>Hire</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./documentation/" border="0" alt="Search" /></td>
-    <td><img width="350px" src="./documentation/" border="0" alt="Detail Talent" /> </td>
+    <td><img width="350px" src="./documentation/search.png" border="0" alt="Search" /></td>
+    <td><img width="350px" src="./documentation/detail.png" border="0" alt="Detail Talent" /> </td>
   </tr>
    <tr>
     <td>Search</td>
     <td>Detail Talent</td>
-  </tr>
-  <tr>
-    <td><img width="350px" src="./documentation/" border="0" alt="Hire" /> </td>
-  </tr>
-   <tr>
-    <td>Hire</td>
-  </tr>
 </table>
 
 # Related Project
