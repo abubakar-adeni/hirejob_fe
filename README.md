@@ -95,32 +95,32 @@ npm run build
 
 <table>
  <tr>
-    <td><img width="350px" src="./public/docs/Peworld Login.png" border="0" alt="Login" /></td>
-    <td> <img width="350px" src="./public/docs/Peworld Register.png" border="0"  alt="Register" /></td>
+    <td><img width="350px" src="./documentation/" border="0" alt="Login" /></td>
+    <td> <img width="350px" src="./documentation/" border="0"  alt="Register" /></td>
   </tr>
   <tr>
     <td>Login</td>
     <td>Register</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./public/docs/Peworld Landing.png" border="0" alt="Landing" /></td>
-    <td><img width="350px" src="./public/docs/Peworld Edit Profile.png" border="0" alt="Profile" /> </td>
+    <td><img width="350px" src="./documentation/landing-page.png" border="0" alt="Landing" /></td>
+    <td><img width="350px" src="../documentation/" border="0" alt="Profile" /> </td>
   </tr>
    <tr>
     <td>Landing Page</td>
     <td>Edit Profile</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./public/docs/Peworld Search.png" border="0" alt="Search" /></td>
-    <td><img width="350px" src="./public/docs/Peworld Detail Talent.jpg" border="0" alt="Detail Talent" /> </td>
+    <td><img width="350px" src="./documentation/" border="0" alt="Search" /></td>
+    <td><img width="350px" src="./documentation/" border="0" alt="Detail Talent" /> </td>
   </tr>
    <tr>
     <td>Search</td>
     <td>Detail Talent</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./public/docs/Peworld Experience.png" border="0" alt="Experience" /></td>
-    <td><img width="350px" src="./public/docs/Peworld Hire.png" border="0" alt="Hire" /> </td>
+    <td><img width="350px" src="./documentation/" border="0" alt="Experience" /></td>
+    <td><img width="350px" src="./documentation/" border="0" alt="Hire" /> </td>
   </tr>
    <tr>
     <td>Experience</td>
