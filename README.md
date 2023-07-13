@@ -5,9 +5,9 @@
   </div>
   <h3 align="center">Hirejob (Hiring App)</h3>
   <p align="center">
-    <a href="https://github.com/ikkair/peworld-fe"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/abubakar-adeni/hirejob_fe"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="hirejob-fe-tqqw.vercel.app/">View Demo</a>
+    <a href="https://hirejob-fe-tqqw.vercel.app/">View Demo</a>
   </p>
 </p>
 
