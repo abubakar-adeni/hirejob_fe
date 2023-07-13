@@ -1,38 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food Recipe Front-End
 
-## Getting Started
+Frontend for Food Recipe built with Bootstrap 5.
 
-First, run the development server:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Food Recipe Front-End is a website interface for Food Recipe Back-End.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Pages for CRUD Recipes and Users
+- Pages for Authentication and Authorization
+- Detail Recipes and Video Detail Recipes
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tech
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Food Recipe Front-End uses a number of open source projects to work properly:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [HTML5](https://www.w3schools.com/html/) - markup language
+- [CSS3](https://www.w3schools.com/css/) - styling the HTML
+- [Bootstrap5](https://getbootstrap.com/) - framework of CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+And of course Food Recipe Front-End itself is open source with a [public repository](https://github.com/alkarim99/food-recipe-fe) on GitHub.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+Food Recipe Front-End able to run on your local, download this repo and open it using visual studio code, and run the live server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Landing Page <br>
+   <img src="./screenshots/1-Landing-Page.png" width="540"/>
+   <img src="./screenshots/2-Landing-Page.png" width="540"/>
+   <img src="./screenshots/3-Landing-Page.png" width="540"/>
+   <img src="./screenshots/4-Landing-Page.png" width="540"/>
+2. Add Recipe Page <br>
+   <img src="./screenshots/5-Add-Recipe-Page.png" width="540"/>
+3. Detail Recipe Page <br>
+   <img src="./screenshots/7-Detail-Recipe-Page.png" width="540"/>
+   <img src="./screenshots/8-Detail-Recipe-Page.png" width="540"/>
+4. Profile Page <br>
+   <img src="./screenshots/6-Profile-Page.png" width="540"/>
+5. Login Page <br>
+   <img src="./screenshots/9-Login-Page.png" width="540"/>
+6. Register Page <br>
+   <img src="./screenshots/10-Register-Page.png" width="540"/>
