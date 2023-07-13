@@ -29,6 +29,9 @@ Peworld is a hiring website to make it easier to connect workers with recruiters
 
 These are the libraries and service used for building this backend API
 
+- [HTML5](https://www.w3schools.com/html/) (https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- [CSS3](https://www.w3schools.com/css/) 
+- [Bootstrap5](https://getbootstrap.com/)
 - [NextJS](https://nextjs.org/)
 - [Bootstrap](https://getbootstrap.com/)
 - [React-icons](https://react-icons.github.io/react-icons/)
