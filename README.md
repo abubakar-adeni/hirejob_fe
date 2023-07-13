@@ -55,7 +55,7 @@ Follow this steps to run the server locally
 1. Clone this repository
 
 ```sh
-git clone https://github.com/ikkair/peworld-fe.git
+git clone https://github.com/abubakar-adeni/hirejob_fe.git
 ```
 
 2. Change directory to hirejob-frontend
@@ -127,8 +127,8 @@ npm run build
 
 # Related Project
 
-:rocket: [`Frontend Peworld`](https://github.com/ikkair/peworld-fe)
+:rocket: [`Frontend Peworld`](https://github.com/abubakar-adeni/hirejob_fe)
 
-:rocket: [`Backend Peworld`](https://github.com/ikkair/peworld-be)
+:rocket: [`Backend Peworld`](https://github.com/kubil-ismail/hire_job_be)
 
-:rocket: [`Demo Peworld`](https://peworld-fe-ikkair.vercel.app/)
+:rocket: [`Demo Peworld`](https://hirejob-fe-tqqw.vercel.app/)
