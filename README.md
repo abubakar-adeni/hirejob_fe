@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://github.com/ikkair/peworld-fe"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://peworld-fe-ikkair.vercel.app/">View Demo</a>
+    <a href="hirejob-fe-tqqw.vercel.app/">View Demo</a>
   </p>
 </p>
 
