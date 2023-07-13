@@ -90,6 +90,9 @@ npm run build
 
 # Screenshots
 
+<img width="350px" src="./documentation/3-device-black.png" border="0" alt="Landing Page" />
+<br>
+
 <table>
  <tr>
     <td><img width="350px" src="./public/docs/Peworld Login.png" border="0" alt="Login" /></td>
