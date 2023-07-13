@@ -96,7 +96,7 @@ npm run build
 <table>
  <tr>
     <td><img width="350px" src="./documentation/login.png" border="0" alt="Login" /></td>
-    <td> <img width="350px" src="./documentation/register.ong" border="0"  alt="Register" /></td>
+    <td> <img width="350px" src="./documentation/register.png" border="0"  alt="Register" /></td>
   </tr>
   <tr>
     <td>Login</td>
