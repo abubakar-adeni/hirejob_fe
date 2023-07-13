@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <div align="center">
-    <img height="90" width="90" src="./public/logo.png" alt="Peworld" border="0"/>
+    <img height="100" width="150" src="./public/logo.png" alt="Peworld" border="0"/>
   </div>
   <h3 align="center">Hirejob (Hiring App)</h3>
   <p align="center">
