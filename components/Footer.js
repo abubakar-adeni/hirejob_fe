@@ -11,9 +11,8 @@ function Footer() {
               <img className="mt-5 " src="/logo_white.png" alt="Image-desc" />
               <div className="text-md-start">
                 <p className="me-5 mt-4 mb-5 text-light ">
-                  Lorem ipsum dolor sit amet,consectetur
-                  <br /> adipiscing elit. In euismod ipsum et dui <br /> rhoncus
-                  auctor.
+                  Talenta terbaik negeri untuk perubahan revolusi 4.0
+                  <br /> Temukan Peluang, Bangun Kariermu.
                 </p>
               </div>
               <hr
