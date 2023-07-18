@@ -70,8 +70,7 @@ function Register() {
               <div className="d-flex flex-column justify-content-center">
                 <h2 className="m-5 mt-2 mb-0">Halo, Pewpeople</h2>
                 <p className="m-5 mt-1 mb-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  euismod ipsum et dui rhoncus auctor.
+                  Bergabunglah dengan kami untuk memulai perjalanan kariermu.
                 </p>
 
                 <form onSubmit={handleSubmit}>
