@@ -125,7 +125,7 @@ function Register() {
                   </div>
                   <div className="m-5 mt-0 mb-0">
                     <label htmlFor="inputPhoneNumber" className="form-label">
-                      Company
+                      Perusahaan
                     </label>
                     <input
                       type="company"
@@ -141,7 +141,7 @@ function Register() {
                   </div>
                   <div className="m-5 mt-0 mb-0">
                     <label htmlFor="inputJobTitle" className="form-label">
-                      Job Tittle
+                      Titel Kerja
                     </label>
                     <input
                       type="job_title"
