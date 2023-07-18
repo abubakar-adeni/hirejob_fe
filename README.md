@@ -111,7 +111,7 @@ npm run build
     <td>Hire</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./documentation/top-jobpng" border="0" alt="Search" /></td>
+    <td><img width="350px" src="./documentation/top_job.png" border="0" alt="Search" /></td>
     <td><img width="350px" src="./documentation/detail.png" border="0" alt="Detail Talent" /> </td>
   </tr>
    <tr>
